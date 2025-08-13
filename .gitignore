@@ -1,0 +1,13 @@
+# Virtual Environments
+venv/
+datagen_env/
+training_env/
+download_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS files
+.DS_Store
+

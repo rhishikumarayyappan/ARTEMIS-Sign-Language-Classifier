@@ -1,0 +1,21 @@
+# Foundational Libraries
+numpy<2.0
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+
+# MMLab Stack (compatible versions)
+mmcv==2.1.0
+mmengine==0.10.3
+mmdet==3.2.0
+mmpose==1.1.0
+
+# Application Libraries
+ultralytics
+deepface
+onnxruntime
+opencv-python
+pandas
+ipython
+tqdm
+tf-keras

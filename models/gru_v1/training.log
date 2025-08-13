@@ -1,0 +1,84 @@
+2025-08-10 13:36:06,028 [INFO] Using device: cuda
+2025-08-10 13:36:06,028 [INFO] Loading sequence data from /root/features/sequences.npz
+2025-08-10 13:36:06,711 [INFO] Starting sequence model training...
+2025-08-10 13:36:06,944 [INFO] Epoch 1/50, Val Acc: 0.7896
+2025-08-10 13:36:06,948 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,060 [INFO] Epoch 2/50, Val Acc: 0.8212
+2025-08-10 13:36:07,071 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,184 [INFO] Epoch 3/50, Val Acc: 0.8224
+2025-08-10 13:36:07,186 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,298 [INFO] Epoch 4/50, Val Acc: 0.8775
+2025-08-10 13:36:07,300 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,411 [INFO] Epoch 5/50, Val Acc: 0.8199
+2025-08-10 13:36:07,522 [INFO] Epoch 6/50, Val Acc: 0.9053
+2025-08-10 13:36:07,524 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,633 [INFO] Epoch 7/50, Val Acc: 0.7704
+2025-08-10 13:36:07,747 [INFO] Epoch 8/50, Val Acc: 0.9078
+2025-08-10 13:36:07,749 [INFO]   -> New best model saved.
+2025-08-10 13:36:07,861 [INFO] Epoch 9/50, Val Acc: 0.9035
+2025-08-10 13:36:07,973 [INFO] Epoch 10/50, Val Acc: 0.8973
+2025-08-10 13:36:08,083 [INFO] Epoch 11/50, Val Acc: 0.9177
+2025-08-10 13:36:08,085 [INFO]   -> New best model saved.
+2025-08-10 13:36:08,197 [INFO] Epoch 12/50, Val Acc: 0.8967
+2025-08-10 13:36:08,308 [INFO] Epoch 13/50, Val Acc: 0.9115
+2025-08-10 13:36:08,420 [INFO] Epoch 14/50, Val Acc: 0.9387
+2025-08-10 13:36:08,421 [INFO]   -> New best model saved.
+2025-08-10 13:36:08,531 [INFO] Epoch 15/50, Val Acc: 0.9047
+2025-08-10 13:36:08,642 [INFO] Epoch 16/50, Val Acc: 0.9295
+2025-08-10 13:36:08,754 [INFO] Epoch 17/50, Val Acc: 0.8991
+2025-08-10 13:36:08,865 [INFO] Epoch 18/50, Val Acc: 0.9319
+2025-08-10 13:36:08,977 [INFO] Epoch 19/50, Val Acc: 0.9418
+2025-08-10 13:36:08,979 [INFO]   -> New best model saved.
+2025-08-10 13:36:09,089 [INFO] Epoch 20/50, Val Acc: 0.9332
+2025-08-10 13:36:09,200 [INFO] Epoch 21/50, Val Acc: 0.9449
+2025-08-10 13:36:09,201 [INFO]   -> New best model saved.
+2025-08-10 13:36:09,311 [INFO] Epoch 22/50, Val Acc: 0.9350
+2025-08-10 13:36:09,421 [INFO] Epoch 23/50, Val Acc: 0.9387
+2025-08-10 13:36:09,530 [INFO] Epoch 24/50, Val Acc: 0.9449
+2025-08-10 13:36:09,641 [INFO] Epoch 25/50, Val Acc: 0.9394
+2025-08-10 13:36:09,749 [INFO] Epoch 26/50, Val Acc: 0.9375
+2025-08-10 13:36:09,860 [INFO] Epoch 27/50, Val Acc: 0.9443
+2025-08-10 13:36:09,971 [INFO] Epoch 28/50, Val Acc: 0.9431
+2025-08-10 13:36:10,083 [INFO] Epoch 29/50, Val Acc: 0.9449
+2025-08-10 13:36:10,194 [INFO] Epoch 30/50, Val Acc: 0.9536
+2025-08-10 13:36:10,196 [INFO]   -> New best model saved.
+2025-08-10 13:36:10,306 [INFO] Epoch 31/50, Val Acc: 0.9598
+2025-08-10 13:36:10,308 [INFO]   -> New best model saved.
+2025-08-10 13:36:10,417 [INFO] Epoch 32/50, Val Acc: 0.9530
+2025-08-10 13:36:10,530 [INFO] Epoch 33/50, Val Acc: 0.9517
+2025-08-10 13:36:10,643 [INFO] Epoch 34/50, Val Acc: 0.9548
+2025-08-10 13:36:10,754 [INFO] Epoch 35/50, Val Acc: 0.9598
+2025-08-10 13:36:10,865 [INFO] Epoch 36/50, Val Acc: 0.9511
+2025-08-10 13:36:10,977 [INFO] Epoch 37/50, Val Acc: 0.9585
+2025-08-10 13:36:11,088 [INFO] Epoch 38/50, Val Acc: 0.9610
+2025-08-10 13:36:11,090 [INFO]   -> New best model saved.
+2025-08-10 13:36:11,200 [INFO] Epoch 39/50, Val Acc: 0.9511
+2025-08-10 13:36:11,313 [INFO] Epoch 40/50, Val Acc: 0.9530
+2025-08-10 13:36:11,423 [INFO] Epoch 41/50, Val Acc: 0.9604
+2025-08-10 13:36:11,535 [INFO] Epoch 42/50, Val Acc: 0.9592
+2025-08-10 13:36:11,644 [INFO] Epoch 43/50, Val Acc: 0.9585
+2025-08-10 13:36:11,755 [INFO] Epoch 44/50, Val Acc: 0.9623
+2025-08-10 13:36:11,757 [INFO]   -> New best model saved.
+2025-08-10 13:36:11,867 [INFO] Epoch 45/50, Val Acc: 0.9356
+2025-08-10 13:36:11,976 [INFO] Epoch 46/50, Val Acc: 0.9251
+2025-08-10 13:36:12,087 [INFO] Epoch 47/50, Val Acc: 0.9653
+2025-08-10 13:36:12,089 [INFO]   -> New best model saved.
+2025-08-10 13:36:12,200 [INFO] Epoch 48/50, Val Acc: 0.9573
+2025-08-10 13:36:12,311 [INFO] Epoch 49/50, Val Acc: 0.9629
+2025-08-10 13:36:12,422 [INFO] Epoch 50/50, Val Acc: 0.9734
+2025-08-10 13:36:12,424 [INFO]   -> New best model saved.
+2025-08-10 13:36:12,424 [INFO] Training finished.
+2025-08-10 13:36:12,424 [INFO] Best Val Acc: 0.9734
+2025-08-10 13:36:12,424 [INFO] 
+Classification Report on Validation Set:
+2025-08-10 13:36:12,427 [INFO] 
+              precision    recall  f1-score   support
+
+         YES       0.96      0.92      0.94       162
+   THANK_YOU       0.97      0.97      0.97       518
+       HELLO       0.98      0.99      0.98       936
+
+    accuracy                           0.97      1616
+   macro avg       0.97      0.96      0.96      1616
+weighted avg       0.97      0.97      0.97      1616
+
