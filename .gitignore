@@ -20,3 +20,6 @@ start_kit/
 data/
 __pycache__/
 .DS_Store
+
+# Local demo kit (do not commit)
+ARTEMIS_Final_Demo_Kit/
