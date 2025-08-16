@@ -11,3 +11,12 @@ __pycache__/
 # macOS files
 .DS_Store
 
+*.mp4
+*.npz
+wlasl_mediapipe_features*/
+WLASL/
+raw_videos/
+start_kit/
+data/
+__pycache__/
+.DS_Store
