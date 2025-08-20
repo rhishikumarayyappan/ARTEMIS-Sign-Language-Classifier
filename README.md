@@ -28,3 +28,11 @@ The primary remaining challenge is a classic **training-serving skew** with the 
 1.  Clone the repository.
 2.  Install dependencies using Poetry: `poetry install --no-root`.
 3.  Run the final demo script: `poetry run python scripts/live_demo_stable.py`.
+
+---
+
+## Design notes (clarity)
+- Earlier **YOLO + MMPose** were used only for **offline diagnostics** (HFSL). They are **not** part of the final runtime pipeline.
+- The final demo is **pip-only**; Poetry files live in `/legacy/` for archival purposes.
+- Inference uses **ONNX Runtime (CPU)** on **32×150** landmark tensors; calibration uses **T=0.60** and **τ≈0.89** for abstention.
+
