@@ -21,7 +21,7 @@ The image below shows the current state of the live demo. The pipeline successfu
 
 The primary remaining challenge is a classic **training-serving skew** with the sign classifier. The immediate next step is to retrain the classifier on a new, correctly processed dataset (like WLASL) to resolve this skew.
 
-![Current Demo Snapshot](final_demo_snapshot.png)
+![Current Demo Snapshot](Final_Demo_UI.png)
 
 ## How to Run the Demo
 
