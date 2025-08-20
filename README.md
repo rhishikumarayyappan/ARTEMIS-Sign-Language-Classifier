@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/rhishikumarayyappan/ARTEMIS-Sign-Language-Classifier)](https://github.com/rhishikumarayyappan/ARTEMIS-Sign-Language-Classifier/releases)
+
 # ARTEMIS: Real-Time Sign Language & Emotion Classification
 
 ## Project Status: In Development
