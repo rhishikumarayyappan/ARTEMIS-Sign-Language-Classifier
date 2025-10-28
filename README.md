@@ -1,38 +1,76 @@
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/rhishikumarayyappan/ARTEMIS-Sign-Language-Classifier)](https://github.com/rhishikumarayyappan/ARTEMIS-Sign-Language-Classifier/releases)
+# ARTEMIS: Portable Sign Language & Emotion Recognition for Edge Devices
 
-# ARTEMIS: Real-Time Sign Language & Emotion Classification
-
-## Project Status: In Development
-
-This repository contains the code, models, and experimental results for my capstone project. The goal is to build a real-time pipeline for classifying American Sign Language gestures and detecting user emotions from a live webcam feed.
-
-This repository serves as a living document of the development process, showcasing the progress, challenges, and iterative improvements made along the way.
-
-## Project Overview
-
-The ARTEMIS system integrates three core machine learning components:
-1.  **A custom-trained YOLOv8 model** for robust detection of the signer.
-2.  **A pre-trained GRU-based sequence model** for classifying sign language gestures.
-3.  **A pre-trained Transformer model** from Hugging Face for analyzing facial emotion.
-
-## Current Progress Snapshot
-
-The image below shows the current state of the live demo. The pipeline successfully integrates all models and performs real-time keypoint extraction, object detection, and emotion classification. The intelligent "wrapper" logic (confidence thresholding and prediction smoothing) is in place to provide a stable user experience.
-
-The primary remaining challenge is a classic **training-serving skew** with the sign classifier. The immediate next step is to retrain the classifier on a new, correctly processed dataset (like WLASL) to resolve this skew.
-
-![Current Demo Snapshot](Final_Demo_UI.png)
-
-## How to Run the Demo
-
-1.  Clone the repository.
-2.  Install dependencies using Poetry: `poetry install --no-root`.
-3.  Run the final demo script: `poetry run python scripts/live_demo_stable.py`.
+![Live demo snapshot](Final_Demo_UI.png)  
+*Real-time demonstration: portable sign language and emotion recognition from webcam, deployable on any standard computer (CPU-only).*
 
 ---
 
-## Design notes (clarity)
-- Earlier **YOLO + MMPose** were used only for **offline diagnostics** (HFSL). They are **not** part of the final runtime pipeline.
-- The final demo is **pip-only**; Poetry files live in `/legacy/` for archival purposes.
-- Inference uses **ONNX Runtime (CPU)** on **32×150** landmark tensors; calibration uses **T=0.60** and **τ≈0.89** for abstention.
+## 🚀 Overview
+
+**ARTEMIS** is an MSc AI capstone project for practical accessibility:  
+A privacy-focused, reproducible, and portable system for **American Sign Language (ASL) word recognition** and **emotion analysis**—requiring only a webcam and CPU.
+
+- **Keypoint-based sign recognition:** Fast, accurate using hand, body, and face landmarks (no raw video needed).
+- **Optional emotion inference:** Real-time emotion context from user expressions.
+
+---
+
+## 🛠️ Technologies & Architecture
+
+- **[MediaPipe Holistic](https://google.github.io/mediapipe/solutions/holistic.html)**: Extracts pose, hand, and face keypoints live.
+- **Bidirectional GRU classifier**: Calibrated, lightweight, exported to ONNX (CPU).
+- **Confidence calibration & abstention**: Reliable predictions using temperature scaling and threshold logic.
+- **Emotion model**: Frame-level, robust to linguistic facial signals.
+
+---
+
+## 🎯 Results
+
+- **Sign accuracy**: Top-1: 0.692, Top-3: 0.923 — signer-independent (WLASL, 10-class slice).
+- **Reliability**: Abstention system—100% correct for kept-predictions at 54% coverage.
+- **Performance**: ~27ms model inference, 149ms end-to-end per clip (CPU-only).
+- **Privacy**: Only keypoints processed—no video stored/transferred.
+
+---
+
+## 📦 Quick Start
+
+1. **Clone this repository**
+2. **Install dependencies**  
+poetry install --no-root
+
+
+3. **Run calibrated demo UI**  
+poetry run python scripts/live_demo_stable.py
+
+
+
+---
+
+## 📝 Design Notes
+
+- Early **YOLO + MMPose** (offline use only)—final runtime is keypoint/GRU/ONNX pipeline.
+- **No GPU needed**—CPU performance tested on everyday ultrabook (Core i5, 16GB RAM).
+- **Calibrated abstention**—"Not Sure" output for low-confidence, maximizing trustworthiness.
+- **Dataset**: WLASL (10-class, signer-independent selection)—documented for reproducibility.
+
+---
+
+## 📖 Reference
+
+For full methodology and evaluation:
+**A Portable Sign Language Recognizer with Emotion Analysis for Edge Devices**  
+*MSc Thesis, Rhishi Kumar Ayyappan, University of Galway (2025)*
+
+---
+
+## 💡 About the Author
+
+**Rhishi Kumar Ayyappan**  
+MSc Computer Science (AI) | University of Galway  
+Passionate about edge AI, accessibility, and machine learning for real-world impact.
+
+
+
+
 
