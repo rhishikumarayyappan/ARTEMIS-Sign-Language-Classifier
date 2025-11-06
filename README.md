@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 **ARTEMIS** is an MSc AI capstone project for practical accessibility:  
 A privacy-focused, reproducible, and portable system for **American Sign Language (ASL) word recognition** and **emotion analysis**—requiring only a webcam and CPU.
@@ -15,7 +15,7 @@ A privacy-focused, reproducible, and portable system for **American Sign Languag
 
 ---
 
-## 🛠️ Technologies & Architecture
+##  Technologies & Architecture
 
 - **[MediaPipe Holistic](https://google.github.io/mediapipe/solutions/holistic.html)**: Extracts pose, hand, and face keypoints live.
 - **Bidirectional GRU classifier**: Calibrated, lightweight, exported to ONNX (CPU).
@@ -24,7 +24,7 @@ A privacy-focused, reproducible, and portable system for **American Sign Languag
 
 ---
 
-## 🎯 Results
+##  Results
 
 - **Sign accuracy**: Top-1: 0.692, Top-3: 0.923 — signer-independent (WLASL, 10-class slice).
 - **Reliability**: Abstention system—100% correct for kept-predictions at 54% coverage.
@@ -33,7 +33,7 @@ A privacy-focused, reproducible, and portable system for **American Sign Languag
 
 ---
 
-## 📦 Quick Start
+##  Quick Start
 
 1. **Clone this repository**
 2. **Install dependencies**  
@@ -47,7 +47,7 @@ poetry run python scripts/live_demo_stable.py
 
 ---
 
-## 📝 Design Notes
+##  Design Notes
 
 - Early **YOLO + MMPose** (offline use only)—final runtime is keypoint/GRU/ONNX pipeline.
 - **No GPU needed**—CPU performance tested on everyday ultrabook (Core i5, 16GB RAM).
@@ -56,7 +56,7 @@ poetry run python scripts/live_demo_stable.py
 
 ---
 
-## 📖 Reference
+##  Reference
 
 For full methodology and evaluation:
 **A Portable Sign Language Recognizer with Emotion Analysis for Edge Devices**  
@@ -64,7 +64,7 @@ For full methodology and evaluation:
 
 ---
 
-## 💡 About the Author
+##  About the Author
 
 **Rhishi Kumar Ayyappan**  
 MSc Computer Science (AI) | University of Galway  
